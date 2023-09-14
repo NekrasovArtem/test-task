@@ -1,0 +1,1 @@
+Тестовое задание для отбора на курс Web Development от GigaSchool.

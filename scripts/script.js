@@ -31,11 +31,11 @@ let btnMore = document.querySelector('#btnMore');
 btnMore.addEventListener('click', () => {
     if (btnMore.textContent == "Показать") {
         btnMore.textContent = "Скрыть";
-        body.style.height = "120vh";
         section.style.height = "800px";
+        body.style.height = "140vh";
     } else {
         btnMore.textContent = "Показать";
-        body.style.height = "100vh";
         section.style.height = "130px";
+        body.style.height = "100vh";
     }
 })

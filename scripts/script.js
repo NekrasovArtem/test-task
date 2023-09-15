@@ -1,20 +1,19 @@
 //Открытие и закрытие меню социальных сетей
 let social = document.querySelector('#social');
-let icons = document.querySelector('#icons');
 let leftArrow = document.querySelector('#leftArrow');
 let rightArrow = document.querySelector('#rightArrow');
 let socialBool = false;
 social.addEventListener('click', () => {
     if (socialBool === false) {
         socialBool = true;
-        rightArrow.style.display = "none";
-        leftArrow.style.display = "block";
-        icons.classList.add("showIcons");
+        rightArrow.style.display = "block";
+        leftArrow.style.display = "none";
+        social.classList.add("showIcons");
     } else {
         socialBool = false;
-        leftArrow.style.display = "none";
-        rightArrow.style.display = "block";
-        icons.classList.remove("showIcons");
+        leftArrow.style.display = "block";
+        rightArrow.style.display = "none";
+        social.classList.remove("showIcons");
     }
 })
 

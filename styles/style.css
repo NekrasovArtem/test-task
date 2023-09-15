@@ -23,6 +23,47 @@ body {
     background-attachment: fixed;
     transition: all 500ms ease-in-out;
 }
+.social {
+    position: absolute;
+    cursor: pointer;
+    top: 20px;
+    right: 0;
+    width: 20px;
+    height: 60px;
+    background-color: rgb(245, 245, 245);
+    border-top-left-radius: 0.8rem;
+    border-bottom-left-radius: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 500ms ease-in-out;
+}
+.social:hover {
+    width: 40px;
+    transition: all 500ms ease-in-out;
+}
+#leftArrow {
+    display: none;
+}
+.icons {
+    position: absolute;
+    top: 20px;
+    right: -300px;
+    width: auto;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: all 500ms ease-in-out;
+}
+.icons img {
+    width: 60px;
+    height: 60px;
+}
+.showIcons {
+    right: 50px;
+    transition: all 500ms ease-in-out;
+}
 section {
     width: 680px;
     height: auto;

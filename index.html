@@ -8,8 +8,7 @@
   </head>
   <body>
     <div class="social" id="social">
-        <img class="arrow" id="leftArrow" src="images/left-arrow.png" alt="Открыть">
-        <img class="arrow" id="rightArrow" src="images/right-arrow.png" alt="Закрыть">
+        <img class="arrow" id="arrow" src="images/left-arrow.png" alt="Стрелка">
         <a href="https://instagram.com/nekrasovxd/">
             <img src="images/instagram.svg" alt="Instagram">
         </a>
@@ -25,7 +24,7 @@
     </div>
     <section>
       <div class="img">
-        <img src="images/foto_1.jpg" alt="Фото" id="img" />
+        <img src="images/foto_1.jpg" alt="Фото" id="img" onclick="replacement()"/>
       </div>
       <div class="info">
         <h1>Лосев Артём</h1>
@@ -58,6 +57,13 @@
       </div>
       <button class="btn" id="btnMore">Показать</button>
     </section>
+    <div class="animate">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
     <script src="scripts/script.js"></script>
   </body>
 </html>

@@ -1,28 +1,38 @@
 //Открытие и закрытие меню социальных сетей
 let social = document.querySelector('#social');
-let leftArrow = document.querySelector('#leftArrow');
-let rightArrow = document.querySelector('#rightArrow');
+let arrow = document.querySelector('#arrow');
 let socialBool = false;
 social.addEventListener('click', () => {
     if (socialBool === false) {
         socialBool = true;
-        rightArrow.style.display = "block";
-        leftArrow.style.display = "none";
+        arrow.style.transform = "rotate(180deg)"
         social.classList.add("showIcons");
     } else {
         socialBool = false;
-        leftArrow.style.display = "block";
-        rightArrow.style.display = "none";
+        arrow.style.transform = "rotate(0deg)"
         social.classList.remove("showIcons");
     }
 })
 
 //Смена фотографи
 let image = document.querySelector('#img');
-image.addEventListener('click', () => {
-    image.src = "images/foto_2.jpg";
-})
-
+let count = 1;
+function replacement() {
+    switch (count) {
+        case 1:
+            image.src = "images/foto_2.jpg"
+            count = 2;
+            break;
+        case 2:
+            image.src = "images/foto_3.jpg"
+            count = 3;
+            break;
+        case 3:
+            image.src = "images/foto_1.jpg"
+            count = 1;
+            break;
+    }
+}
 
 //Показ и скрытие подробностей об авторе
 let section = document.querySelector('.info');

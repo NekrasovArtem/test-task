@@ -116,6 +116,7 @@ section {
     inset: 5px;
 }
 .img img {
+    cursor: pointer;
     position: absolute;
     left: 3px;
     top: 3px;
@@ -222,5 +223,36 @@ section {
     }
     100% {
         opacity: 0;
+    }
+}
+@media screen and (max-width: 700px) {
+    section {
+        width: 500px;
+    }
+    .info {
+        width: 400px;
+    }
+}
+@media screen and (max-width: 520px) {
+    section {
+        width: 380px;
+    }
+    .info {
+        width: 300px;
+    }
+    .info h2 {
+        font-size: 22px;
+    }
+    .info p {
+        font-size: 18px;
+    }
+    .img {
+        top: -160px;
+        transform: scale(0.8, 0.8);
+    }
+}
+@media screen and (max-width: 400px) {
+    section {
+        width: 340px;
     }
 }

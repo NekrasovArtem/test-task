@@ -41,8 +41,16 @@ let btnMore = document.querySelector('#btnMore');
 btnMore.addEventListener('click', () => {
     if (btnMore.textContent == "Показать") {
         btnMore.textContent = "Скрыть";
-        section.style.height = "800px";
-        body.style.height = "140vh";
+        if (window.innerWidth <= 520) {
+            section.style.height = "820px"
+            body.style.height = "170vh";
+        } else if (window.innerWidth <= 700) {
+            section.style.height = "860px";
+            body.style.height = "170vh";
+        } else {
+            section.style.height = "800px";
+            body.style.height = "140vh";
+        }
     } else {
         btnMore.textContent = "Показать";
         section.style.height = "130px";

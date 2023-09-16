@@ -99,9 +99,9 @@ section {
     width: 500px;
     height: 150px;
     background: linear-gradient(transparent, var(--text), var(--text), var(--text), transparent);
-    animation: animate 60s linear infinite;
+    animation: fireflies 60s linear infinite;
 }
-@keyframes animate {
+@keyframes fireflies {
     0% {
         transform: translate(-50%, -50%) rotate(0deg);
     }
@@ -165,11 +165,11 @@ section {
 .btn:hover {
     background-color: rgb(216, 216, 216);
 }
-.animate {
+.fireflies {
     position: fixed;
     z-index: 2;
 }
-.animate span {
+.fireflies span {
     position: absolute;
     width: 3px;
     height: 3px;
@@ -179,29 +179,39 @@ section {
     animation: animation 10s infinite;
     opacity: 0;
 }
-.animate span:nth-child(1) {
+.fireflies span:nth-child(1) {
     left: 480px;
     top: 100px;
 }
-.animate span:nth-child(2) {
+.fireflies span:nth-child(2) {
     left: 900px;
     top: 450px;
     animation-delay: 2s;
 }
-.animate span:nth-child(3) {
+.fireflies span:nth-child(3) {
     right: 750px;
     top: 150px;
     animation-delay: 3s;
 }
-.animate span:nth-child(4) {
-    left: 0;
-    top: 0;
-    animation-delay: 0;
+.fireflies span:nth-child(4) {
+    right: 650px;
+    top: 800px;
+    animation-delay: 1s;
 }
-.animate span:nth-child(5) {
-    left: 0;
-    top: 0;
-    animation-delay: 0;
+.fireflies span:nth-child(5) {
+    left: 80px;
+    top: 750px;
+    animation-delay: 4s;
+}
+.fireflies span:nth-child(6) {
+    left: 150px;
+    top: 50px;
+    animation-delay: 2s;
+}
+.fireflies span:nth-child(7) {
+    right: 520px;
+    top: 300px;
+    animation-delay: 1s;
 }
 @keyframes animation {
     0% {

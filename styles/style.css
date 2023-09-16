@@ -1,16 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 :root {
     --text: rgb(231, 245, 255);
 }
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Montserrat';
 }
+
 body::-webkit-scrollbar {
     display: none;
 }
+
 body {
     width: 100%;
     height: 100vh;
@@ -23,6 +27,7 @@ body {
     background-attachment: fixed;
     transition: all 500ms ease-in-out;
 }
+
 body::before {
     position: fixed;
     content: '';
@@ -30,6 +35,7 @@ body::before {
     width: 100%;
     height: 100%;
 }
+
 .social {
     position: fixed;
     cursor: pointer;
@@ -41,7 +47,7 @@ body::before {
     background-color: rgba(245, 245, 245, 0.1);
     backdrop-filter: blur(5px);
     border-top: 1px solid rgba(176, 216, 255, 0.4);
-    border-left:  1px solid rgba(176, 216, 255, 0.4);
+    border-left: 1px solid rgba(176, 216, 255, 0.4);
     box-shadow: 20px 5px 50px rgba(0, 0, 0, 0.5);
     border-top-left-radius: 0.8rem;
     border-bottom-left-radius: 0.8rem;
@@ -53,19 +59,23 @@ body::before {
     transition: all 500ms ease-in-out;
     z-index: 2;
 }
-.social > a > img {
+
+.social>a>img {
     width: 50px;
     height: 50px;
 }
+
 .arrow {
     transition: all 200ms ease-in-out;
     width: 24px;
     height: 24px;
 }
+
 .showIcons {
     transform: translateX(0);
     transition: all 500ms ease-in-out;
 }
+
 section {
     width: 680px;
     height: auto;
@@ -78,9 +88,10 @@ section {
     background-color: rgba(138, 199, 255, 0.1);
     backdrop-filter: blur(5px);
     border-top: 1px solid rgba(176, 216, 255, 0.4);
-    border-left:  1px solid rgba(176, 216, 255, 0.4);
+    border-left: 1px solid rgba(176, 216, 255, 0.4);
     box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.5);
 }
+
 .img {
     width: 300px;
     height: 300px;
@@ -90,6 +101,7 @@ section {
     transition: 500ms;
     overflow: hidden;
 }
+
 .img::before {
     content: '';
     position: absolute;
@@ -101,20 +113,24 @@ section {
     background: linear-gradient(transparent, var(--text), var(--text), var(--text), transparent);
     animation: fireflies 60s linear infinite;
 }
+
 @keyframes fireflies {
     0% {
         transform: translate(-50%, -50%) rotate(0deg);
     }
+
     100% {
         transform: translate(-50%, -50%) rotate(360deg);
     }
 }
+
 .img::after {
     content: '';
     position: absolute;
     border-radius: 2rem;
     inset: 5px;
 }
+
 .img img {
     cursor: pointer;
     position: absolute;
@@ -125,6 +141,7 @@ section {
     border-radius: 1.9rem;
     z-index: 2;
 }
+
 .info {
     margin-top: 110px;
     transition: all 1000ms ease-in-out;
@@ -135,25 +152,30 @@ section {
     flex-direction: column;
     gap: 4px;
 }
+
 .info h1 {
     font-size: 42px;
     font-weight: 600;
     color: var(--text);
 }
+
 .info h2 {
     font-size: 24px;
     color: var(--text);
     margin-top: 10px;
 }
+
 .info p {
     font-size: 20px;
     color: var(--text);
 }
+
 .info ul {
     font-size: 20px;
     margin-left: 30px;
     color: var(--text);
 }
+
 .btn {
     cursor: pointer;
     width: 160px;
@@ -163,13 +185,16 @@ section {
     border: none;
     border-radius: 2rem;
 }
+
 .btn:hover {
     background-color: rgb(216, 216, 216);
 }
+
 .fireflies {
     position: fixed;
     z-index: 2;
 }
+
 .fireflies span {
     position: absolute;
     width: 3px;
@@ -180,77 +205,95 @@ section {
     animation: animation 10s infinite;
     opacity: 0;
 }
+
 .fireflies span:nth-child(1) {
     left: 480px;
     top: 100px;
 }
+
 .fireflies span:nth-child(2) {
     left: 900px;
     top: 450px;
     animation-delay: 2s;
 }
+
 .fireflies span:nth-child(3) {
     right: 750px;
     top: 150px;
     animation-delay: 3s;
 }
+
 .fireflies span:nth-child(4) {
     right: 650px;
     top: 800px;
     animation-delay: 1s;
 }
+
 .fireflies span:nth-child(5) {
     left: 80px;
     top: 750px;
     animation-delay: 4s;
 }
+
 .fireflies span:nth-child(6) {
     left: 150px;
     top: 50px;
     animation-delay: 2s;
 }
+
 .fireflies span:nth-child(7) {
     right: 520px;
     top: 300px;
     animation-delay: 1s;
 }
+
 @keyframes animation {
     0% {
         opacity: 0;
     }
+
     50% {
         opacity: 1;
     }
+
     100% {
         opacity: 0;
     }
 }
+
 @media screen and (max-width: 700px) {
     section {
         width: 500px;
     }
+
     .info {
         width: 400px;
     }
 }
+
 @media screen and (max-width: 520px) {
     section {
         width: 380px;
     }
+
     .info {
         width: 300px;
     }
+
     .info h2 {
         font-size: 22px;
     }
+
     .info p {
         font-size: 18px;
     }
+
     .img {
         top: -160px;
         transform: scale(0.8, 0.8);
     }
 }
+
 @media screen and (max-width: 400px) {
     section {
         width: 340px;

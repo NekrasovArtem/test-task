@@ -14,7 +14,7 @@ social.addEventListener('click', () => {
     }
 })
 
-//Смена фотографи
+//Смена фотографии
 let image = document.querySelector('#img');
 let count = 1;
 function replacement() {

@@ -101,6 +101,7 @@ section {
     border-top: 1px solid rgba(176, 216, 255, 0.4);
     border-left: 1px solid rgba(176, 216, 255, 0.4);
     box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.5);
+    z-index: 2;
 }
 
 .img {
@@ -159,7 +160,7 @@ section {
     width: calc(100% - 6px);
     height: calc(100% - 6px);
     border-radius: 1.9rem;
-    z-index: 2;
+    z-index: 3;
 }
 
 .info {

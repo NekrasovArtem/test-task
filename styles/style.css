@@ -329,8 +329,12 @@ section {
         width: 300px;
     }
 
+    .info h1 {
+        font-size: 38px;
+    }
+
     .info h2 {
-        font-size: 20px;
+        font-size: 22px;
     }
 
     .info p {

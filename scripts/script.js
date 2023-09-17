@@ -42,7 +42,7 @@ btnMore.addEventListener('click', () => {
     if (btnMore.textContent == "Показать") {
         btnMore.textContent = "Скрыть";
         if (window.innerWidth <= 520) {
-            section.style.height = "820px"
+            section.style.height = "830px"
             body.style.height = "170vh";
         } else if (window.innerWidth <= 700) {
             section.style.height = "860px";

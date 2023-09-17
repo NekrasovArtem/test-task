@@ -26,6 +26,9 @@ body {
     background-position: top center;
     background-attachment: fixed;
     transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -webkit-transition: all 500ms ease-in-out;
 }
 
 body::before {
@@ -35,7 +38,6 @@ body::before {
     width: 100%;
     height: 100%;
 }
-
 .social {
     position: fixed;
     cursor: pointer;
@@ -57,6 +59,9 @@ body::before {
     gap: 10px;
     transform: translateX(240px);
     transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -webkit-transition: all 500ms ease-in-out;
     z-index: 2;
 }
 
@@ -67,6 +72,9 @@ body::before {
 
 .arrow {
     transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -webkit-transition: all 200ms ease-in-out;
     width: 24px;
     height: 24px;
 }
@@ -74,6 +82,9 @@ body::before {
 .showIcons {
     transform: translateX(0);
     transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -webkit-transition: all 500ms ease-in-out;
 }
 
 section {
@@ -111,16 +122,25 @@ section {
     width: 500px;
     height: 150px;
     background: linear-gradient(transparent, var(--text), var(--text), var(--text), transparent);
-    animation: fireflies 60s linear infinite;
+    animation: rotation 60s linear infinite;
+    -o-animation: rotation 60s linear infinite;
+    -moz-animation: rotation 60s linear infinite;
+    -webkit-animation: rotation 60s linear infinite;
 }
 
-@keyframes fireflies {
+@keyframes rotation {
     0% {
         transform: translate(-50%, -50%) rotate(0deg);
+        -o-transform: translate(-50%, -50%) rotate(0deg);
+        -moz-transform: translate(-50%, -50%) rotate(0deg);
+        -webkit-transform: translate(-50%, -50%) rotate(0deg);
     }
 
     100% {
         transform: translate(-50%, -50%) rotate(360deg);
+        -o-transform: translate(-50%, -50%) rotate(360deg);
+        -moz-transform: translate(-50%, -50%) rotate(360deg);
+        -webkit-transform: translate(-50%, -50%) rotate(360deg);
     }
 }
 
@@ -145,6 +165,9 @@ section {
 .info {
     margin-top: 110px;
     transition: all 1000ms ease-in-out;
+    -o-transition: all 1000ms ease-in-out;
+    -moz-transition: all 1000ms ease-in-out;
+    -webkit-transition: all 1000ms ease-in-out;
     height: 130px;
     width: 500px;
     overflow: hidden;
@@ -202,7 +225,10 @@ section {
     border-radius: 100%;
     background-color: rgba(255, 255, 0, 0.4);
     box-shadow: 0 0 10px 3px yellow;
-    animation: animation 10s infinite;
+    animation: fireflie 10s infinite;
+    -o-animation: fireflie 10s infinite;
+    -moz-animation: fireflie 10s infinite;
+    -webkit-animation: fireflie 10s infinite;
     opacity: 0;
 }
 
@@ -215,39 +241,57 @@ section {
     left: 900px;
     top: 450px;
     animation-delay: 2s;
+    -o-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    -webkit-animation-delay: 2s;
 }
 
 .fireflies span:nth-child(3) {
     right: 750px;
     top: 150px;
     animation-delay: 3s;
+    -o-animation-delay: 3s;
+    -moz-animation-delay: 3s;
+    -webkit-animation-delay: 3s;
 }
 
 .fireflies span:nth-child(4) {
     right: 650px;
     top: 800px;
     animation-delay: 1s;
+    -o-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    -webkit-animation-delay: 1s;
 }
 
 .fireflies span:nth-child(5) {
     left: 80px;
     top: 750px;
     animation-delay: 4s;
+    -o-animation-delay: 4s;
+    -moz-animation-delay: 4s;
+    -webkit-animation-delay: 4s;
 }
 
 .fireflies span:nth-child(6) {
     left: 150px;
     top: 50px;
     animation-delay: 2s;
+    -o-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    -webkit-animation-delay: 2s;
 }
 
 .fireflies span:nth-child(7) {
     right: 520px;
     top: 300px;
     animation-delay: 1s;
+    -o-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    -webkit-animation-delay: 1s;
 }
 
-@keyframes animation {
+@keyframes fireflie {
     0% {
         opacity: 0;
     }
